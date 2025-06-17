@@ -17,7 +17,7 @@ const hdConstraints = {
 }
 
 const encoderConfig = {
-    ...qvgaConstraints,
+    ...hdConstraints,
     bitrate: 10e6,
     // WebM
     codec: 'vp09.00.10.08',
@@ -32,7 +32,7 @@ const encoderConfig = {
 }
 
 const webmWriterConfig = {
-    ...qvgaConstraints,
+    ...hdConstraints,
     codec: 'VP9',
     width: encoderConfig.width,
     height: encoderConfig.height,
